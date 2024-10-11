@@ -28,6 +28,9 @@ else:
 # Абсолютный путь к самому скрипту
 current_script_path = os.path.abspath(__file__)
 
+# Настройка долгосрочного хранения учетных данных с помощью credential-store
+subprocess.run(["git", "config", "credential.helper", "store"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
 # Клонирование или обновление репозитория
 if os.path.isdir(repo_dir) and os.path.isdir(os.path.join(repo_dir, ".git")):
     # Переход в существующий репозиторий и обновление
@@ -79,7 +82,7 @@ else:
 if os.path.isfile(password_file) and (global_username and global_password or local_username and local_password):
     os.remove(password_file)
     print("Файл с паролем удалён, так как найдены сохранённые настройки Git.")
-    
+
 # Настройка кеширования пароля локально
 subprocess.run(["git", "config", "credential.helper", "cache --timeout=900"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
@@ -223,5 +226,7 @@ print(f"Общее количество доменов: {len(sorted_domains)}")
 
 # Добавление, коммит и пуш изменений
 subprocess.run(["git", "add", output_file], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+subprocess.run(["git", "add", requirements_file], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+subprocess.run(["git", "add", script_name], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 subprocess.run(["git", "commit", "-m", commit_message], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 subprocess.run(["git", "push", "origin", "main"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
