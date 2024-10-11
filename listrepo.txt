@@ -1,0 +1,3 @@
+https://raw.githubusercontent.com/ipverse/rir-ip/master/country/ru/ipv4-aggregated.txt
+https://raw.githubusercontent.com/ilyals/glinet/refs/heads/main/domainlist.txt
+https://antifilter.network/download/govno.lst
