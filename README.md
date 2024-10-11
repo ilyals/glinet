@@ -9,7 +9,7 @@
 
 2. Перейдите в папку репозитория и запустите скрипт:
    ```bash
-   cd C:\Users\ilya\OneDrive\Рабочий стол\VPN\glinet
+   cd glinet
    python3 makelist.py
    ```
 
