@@ -7,9 +7,14 @@
    git clone https://github.com/ilyals/glinet.git
    ```
 
-2. Перейдите в папку репозитория и запустите скрипт:
+2. Перейдите в папку репозитория и установите зависимости:
    ```bash
    cd glinet
+   pip install -r requirements.txt
+   ```
+
+3. Запустите скрипт:
+   ```bash
    python3 makelist.py
    ```
 
