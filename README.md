@@ -1,4 +1,4 @@
-# Установка и обновление списка на сервере
+# Update Filter Script
 
 ## Быстрый старт
 
@@ -13,7 +13,13 @@
    pip install -r requirements.txt
    ```
 
-3. Запустите скрипт:
+3. Создайте файл .gitpassword для хранения имени пользователя и пароля для Git (или используйте ENV):
+   ```bash
+   echo 'GIT_USERNAME=your_username' > .gitpassword
+   echo 'GIT_PASSWORD=your_password' >> .gitpassword
+   ```
+
+4. Запустите скрипт:
    ```bash
    python3 makelist.py
    ```
