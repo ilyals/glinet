@@ -15,7 +15,7 @@
 
 3. Создайте файл .gitpassword для хранения имени пользователя и пароля для Git (или используйте ENV):
    ```bash
-   echo 'GIT_USERNAME=your_username' > .gitpassword
+   echo 'GIT_USERNAME=your_username' >> .gitpassword
    echo 'GIT_PASSWORD=your_password' >> .gitpassword
    ```
 
