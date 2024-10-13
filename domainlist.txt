@@ -59,3 +59,4 @@ www.sberbank.ru
 77.88.0.0/16
 98.137.0.0/16
 school.mos.ru
+evotor.ru
