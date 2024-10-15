@@ -60,3 +60,5 @@ www.sberbank.ru
 98.137.0.0/16
 school.mos.ru
 evotor.ru
+ekwb.com
+www.ekwb.com
