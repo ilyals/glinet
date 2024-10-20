@@ -8559,6 +8559,7 @@
 ekwb.com
 www.ekwb.com
 flashr.ru
+kaspersky.ru
 91.220.71.0/24
 91.220.35.0/24
 91.220.28.0/24
