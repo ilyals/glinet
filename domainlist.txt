@@ -67,3 +67,4 @@ kaspersky.ru
 kaspersky.com
 connect.alean.ru
 stolichki.ru
+cdn.stolichki.ru
