@@ -110,4 +110,5 @@ cdn.stolichki.ru
 155.133.244.0/24
 205.196.6.0/24
 146.66.155.0/24
-
+valvesoftware.com
+valve.net
